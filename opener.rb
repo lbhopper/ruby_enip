@@ -75,11 +75,6 @@ socket.interfaces.print
 session = ENIP::Session.new socket
 
 #
-# reset the device
-#
-session.identity[1].reset 0
-
-#
 # Exclpicit Messaging operations
 #
 puts session.assembly[INPUT_ASSEMBLY_NUM].read.unpack("H*")
